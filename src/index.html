@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>Profile Application</title>    
+    <!-- stylesheet Nested component should be below parnet component as css have inheritance-->
+    <link rel="stylesheet" href="../src/profileApp/profile_main.css">
+    <link rel="stylesheet" href="../assets/bootstrap-4.5.0-dist/css/bootstrap.min.css"></link>
+    <!-- Code dependent js scripts -->
+    <script src="../assets/bootstrap-4.5.0-dist/jquery/jquery_3.5.1.js"></script>
+    <script src="../assets/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+    <script src="../assets/angularjs/angular.min.js"></script>
+    <script src="../assets/angularjs/angular-route.min.js"></script>
+    <script src="../assets/angularjs/angular-resource.min.js"></script>
+    <script src="../assets/angularjs/angular-sanitize.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="build/style.css"> -->
+
+</head>
+
+<body>
+    <div ng-app="profileApp">
+        <div ng-view class="main-container"></div>
+    </div>
+    <!-- custom javascript files -->
+
+    <!-- webpack automatically add script tags as we used HtmlWebpackPlugin -->
+    <!-- <script defer src="/build/bundle.js"></script> -->
+
+    <!--  <script defer src="/app.module.js"></script>
+    <script defer src="/app.route.js"></script> -->
+    <!-- <script defer src="/profileApp/main.module.js"></script>
+    <script defer src="/profileApp/profile_main.js"></script>
+    <script defer src="/profileApp/signin.component/signin.component.js"></script>
+    <script defer src="/profileApp/signup.component/signup.component.js"></script> -->
+</body>
+
+</html>
